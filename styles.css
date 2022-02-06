@@ -63,7 +63,7 @@ body {
   text-align: center;
 }
 
-.card:hover .overlay {
+.card-img:hover .overlay {
   opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */
