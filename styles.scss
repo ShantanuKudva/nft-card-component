@@ -32,7 +32,7 @@ body{
     //border: 3px solid black;
     padding: 12px;
     padding-top: 20px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.295);
     background-color: $card-bg;
     text-align: center;
     width: 250px;
@@ -44,8 +44,37 @@ body{
             //border: 3px solid black;
             width: 230px;
             border-radius: 15px;
+            transition: all 0.5s;
+           
         }
-        
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #24f0f0;
+          }
+          svg {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+          
+         
     }
+    &:hover .overlay {
+        opacity: 1;
+      } 
 
 }
