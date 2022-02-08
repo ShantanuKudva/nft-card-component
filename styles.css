@@ -39,6 +39,37 @@ body {
   transition: all 0.5s;
 }
 
+.card-img .overlay {
+  position: absolute;
+  top: 19px;
+  bottom: 0;
+  left: 17px;
+  right: 0;
+  height: 235px;
+  width: 235px;
+  border-radius: 10px;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: rgba(0, 255, 247, 0.521);
+}
+
+.card-img svg {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card-img:hover .overlay {
+  opacity: 1;
+}
+
 .card-heading {
   padding-top: 10px;
 }
