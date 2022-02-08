@@ -27,7 +27,7 @@ body {
   background-color: #14253d;
   text-align: center;
   width: 250px;
-  height: 420px;
+  height: 440px;
   border-radius: 10px;
   font-size: 18px;
 }
@@ -39,6 +39,10 @@ body {
   transition: all 0.5s;
 }
 
+.card-heading {
+  padding-top: 10px;
+}
+
 .card-heading h4 {
   text-decoration: none;
   color: white;
@@ -46,7 +50,7 @@ body {
   padding-left: 10px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .card-heading h4:hover {
@@ -64,7 +68,8 @@ body {
 }
 
 .card-info {
-  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   content: "";
   display: table;
   clear: both;
@@ -78,7 +83,7 @@ body {
 .card-info ul li:first-child {
   float: left;
   padding-left: 10px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .card-info ul li:first-child svg {
@@ -105,8 +110,32 @@ body {
 }
 
 .card-footer {
-  content: "";
-  display: table;
-  clear: both;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 25px;
+}
+
+.card-footer-text {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 10px;
+}
+
+.card-footer-text span {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.card-footer-text span:hover {
+  color: #00fff7;
 }
 /*# sourceMappingURL=styles.css.map */
