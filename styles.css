@@ -110,6 +110,7 @@ body {
 }
 
 .card-footer {
+  padding-left: 10px;
   padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,17 +118,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   height: 25px;
 }
 
 .card-footer-text {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  font-size: 10px;
+  font-size: 12px;
+  padding-left: 15px;
+  color: #8bacda;
 }
 
 .card-footer-text span {

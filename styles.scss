@@ -153,30 +153,27 @@ body{
     }
     
    &-footer{
-       padding-top: 10px;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       height: 25px;
+       padding-left: 10px;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 25px;
        
        
        &-text{
-           height: fit-content;
-           font-size: 10px;
+           font-size: 12px;
+           padding-left: 15px;
+           color: $soft-blue;
            span{
                transition: all 0.5s;
            }
+
            span:hover{
                 color: $cyan;
            }
+           
        }
-    //    &-img{
-    //        img{
-    //         height: 25px;
-    //         object-fit: contain;
-    //        }
-            
-    //       }
        
       
    }
